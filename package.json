@@ -4,7 +4,7 @@
   "description": "Seneca plugin that provides backwards compatible logging for Seneca 3.x",
   "main": "legacy-logger.js",
   "scripts": {
-    "test": "lab -v -P test",
+    "test": "lab -v -L -P test",
      "annotate": "docco legacy-logger.js -o docs/annotated"
   },
   "repository": {
@@ -33,9 +33,17 @@
     "code": "3.0.x",
     "joi": "9.0.x",
     "docco": "0.7.x",
+    "eslint-config-seneca": "3.x.x",
+    "eslint-plugin-hapi": "4.x.x",
+    "eslint-plugin-standard": "2.x.x",
     "pre-commit": "1.1.x",
     "lab": "11.0.x"
   },
+  "files": [
+    "legacy-logger.js",
+    "README.md",
+    "LICENSE"
+  ],
   "pre-commit": [
     "test"
   ]
